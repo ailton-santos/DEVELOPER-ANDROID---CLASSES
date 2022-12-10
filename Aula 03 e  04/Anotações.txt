@@ -1,0 +1,30 @@
+CREATE DATABASE: Responsável por criar o Banco de Dados.
+CREATE TABLE: Responsável por criar uma tabela dentro do BD para abrigar os dados de maneira
+organizada.
+Os principais comandos da Data Manipulation Language (DML) ou Linguagem de Manipulação de
+Dados utilizados nesse projeto “AppCofre” são:
+INSERT: Responsável por inserir dados de maneira organizada em uma determinada tabela dentro do
+banco de dados.
+UPDATE: Responsável por alterar dados que já foram inseridos em uma determinada tabela.
+DELETE: Responsável por deletar dados que estão inseridos em uma determinada tabela.
+SELECT: Responsável por ler dados que estão inseridos em uma determinada tabela
+
+
+SQLiteOpenHelper 
+
+No Android Studio vamos trabalhar com uma classe chamada SQLiteOpenHelper, ela vai nos auxiliares
+em todo o trabalho complexo de criação de um BD utilizando o SQLite. Conforme o material disponível
+no site oficial do Android Studio disponível no link:
+https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper, o
+SQLiteOpenHelper é uma classe auxiliar para gerenciar a criação de banco de dados e o gerenciamento
+de versão.
+Você cria uma classe implementando os métodos onCreate que é responsável por criar a estrutura do
+banco quando essa ainda não existir, e o onUpgrade que atualiza a estrutura do banco quando isso for
+necessário. Essas implementações são usadas para garantir que o banco de dados funcione sempre em
+um estado sensato e integro, de acordo com a necessidade do aplicativo.
+Essa classe facilita a implementação e a atualização do banco de dados até a primeira execução, a fim
+de evitar o bloqueio da inicialização do aplicativo.
+O SQLiteOpenHelper é uma ótima opção quando o assunto é manipulação de banco de dados local no
+dispositivo. Para facilitar o uso do SQLite no projeto, o “Agenda” foi desenvolvido utilizando alguns
+conceitos do padrão MVC de programação, e agora vamos finalizar o projeto inserindo os códigos
+responsáveis pela integração do aplicativo com o SQLite.

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="544dp"
+        android:layout_height="858dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574"
+        app:srcCompat="@drawable/digital" />
+
+    <EditText
+        android:id="@+id/edtValorOculto"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="64dp"
+        android:background="#97ADE3"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="Digite o Valor!"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNovo"
+        android:layout_width="172dp"
+        android:layout_height="51dp"
+        android:onClick="clickBtnNovo"
+        android:text="Novo"
+        android:textSize="24sp"
+        app:backgroundTint="#0F0F10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="224dp"
+        android:layout_height="66dp"
+        android:onClick="clickBtnEnviar"
+        android:text="Enviar"
+        android:textSize="30sp"
+        app:backgroundTint="#1E286E"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/txtDica"
+        android:layout_width="406dp"
+        android:layout_height="29dp"
+        android:background="#0D195A"
+        android:text="Valor de 1 até 10"
+        android:textAlignment="center"
+        android:textColor="#EEEEF1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="56dp"
+        android:background="#58586E"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:text=" ? "
+        android:textAlignment="center"
+        android:textColor="#AE9A9A"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtValorOculto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
